@@ -1,3 +1,4 @@
+package Recursion_Problems;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] example_arr = {1,2,3,4,5,6,7,8,9};
