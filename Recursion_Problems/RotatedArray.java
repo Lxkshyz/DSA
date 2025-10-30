@@ -13,7 +13,6 @@ public class RotatedArray {
         if (m > s && arr[m] < arr[m-1]){
             return m-1;
         }
-
         if (arr[m] >= arr[s]){
             return findPeak(arr, m+1, e);
         }
@@ -21,6 +20,9 @@ public class RotatedArray {
             return findPeak(arr, s, m-1);
         }
     }
+
+
+    
     public static int binarySearch(int[] arr, int target, int s, int e){
         int m = s + (e - s) / 2;
         if(s>e){
