@@ -47,7 +47,6 @@ public class LinkedList<E>{
             this.size++;
         }
     }
-
     public void insert(int index, E data) {
         if (index < 0 || index > this.size) {
             throw new IndexOutOfBoundsException("Invalid index !");
@@ -63,7 +62,7 @@ public class LinkedList<E>{
             return;
         }
         if (index == this.size) {
-            add(data); // insert at end
+            add(data);
             return;
         }
         Node temp = head;
@@ -95,6 +94,39 @@ public class LinkedList<E>{
         tail = prevNode;
         tail.next = null;
         size--;
+    }
+
+    private Node find(int index){
+        if (this.head == null){
+            return null;
+        }
+        if (size == 1){
+            return this.head;
+        }
+        Node temp = this.head;
+        for (int i = 0; i<index; i++){
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    public void deleteAt(int index) {
+        if (index < 0 || index >= size) {
+            return;
+        }
+        if (index == 0) {
+            head = head.next;
+            size--;
+            return;
+        }
+
+        Node prev = find(index - 1);
+        Node toDelete = prev.next;
+        prev.next = toDelete.next;
+        size--;
+        if (prev.next == null) {
+            tail = prev;
+        }
     }
 
     @Override
