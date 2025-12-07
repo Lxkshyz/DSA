@@ -1,0 +1,10 @@
+# IntelliJ IDEA
+.idea/
+out/
+
+# Ignore macOS junk
+.DS_Store
+
+# Ignore build files (if you ever use Maven/Gradle later)
+target/
+build/
