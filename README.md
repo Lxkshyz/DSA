@@ -7,6 +7,7 @@
 - Found sum of elements
 - Found maximum element
 - Found minimum element
+- Solved 2D array problem
 
 **Linked List**
 - Understood node structure and Linked List types
