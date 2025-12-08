@@ -6,7 +6,6 @@ public class HourGlass {
                         {5, -3, 3, -9, 8, 3},
                         {6, 4, 9, 9, -4, 4},
                         {4, 5, -5, 8, -2, 6}};
-        print2D(nums);
         hourGlassSum(nums);
     }
     public static void hourGlassSum(int[][] arr){
