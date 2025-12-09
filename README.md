@@ -35,3 +35,14 @@
 - Solved Hackerank Problems mentioned below:
 - Difference of diagonal of squared matrix
 - Absolute difference between ratios
+
+### Day 4
+
+
+**Linked List**
+- Understood double linked list structure.
+- Implemented Doubly Linked List with: 
+  - head, tail, size
+  - add at end
+  - insert at index
+  - display list
