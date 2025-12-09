@@ -27,3 +27,11 @@
 - Solved Hackerank Problems mentioned below:
 - Alice and bob Array comparison problem
 - Sum of elements in array
+
+### Day 3
+
+
+**Arrays**
+- Solved Hackerank Problems mentioned below:
+- Difference of diagonal of squared matrix
+- Absolute difference between ratios
