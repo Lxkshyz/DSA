@@ -1,7 +1,7 @@
-package DataStructures;
+package DataStructures.LinkedList;
 
 
-public class LinkedList<E>{
+public class SinglyLinkedList<E>{
     class Node{
         E data;
         Node next;
@@ -18,7 +18,7 @@ public class LinkedList<E>{
     private Node head;
     private Node tail;
     private int size;
-    public LinkedList(){
+    public SinglyLinkedList(){
         this.size = 0;
         this.head = null;
         this.tail = null;
