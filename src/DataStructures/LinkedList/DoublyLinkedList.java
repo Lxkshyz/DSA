@@ -3,6 +3,12 @@ package DataStructures.LinkedList;
 public class DoublyLinkedList<E> {
     private Node Head;
     private Node Tail;
+    public E getHead(){
+        return this.Head == null ? null : this.Head.data;
+    }
+    public E getTail(){
+        return this.Tail == null ? null : this.Tail.data;
+    }
     private int size;
     private class Node{
         Node prev;
@@ -41,6 +47,7 @@ public class DoublyLinkedList<E> {
     }
     public void insertAt(int index, E value){
         if (index < 0 || index > size){
+            System.out.println("Error indexing !");
             return;
         }
         Node newNode = new Node(value);
@@ -77,7 +84,7 @@ public class DoublyLinkedList<E> {
         }
         else{
             Node tempNode = this.Tail;
-            for (int i = size - 1; i>index; i--){
+            for (int i = this.size - 1; i > index; i--) {
                 tempNode = tempNode.prev;
             }
             Node prevNode = tempNode.prev;
@@ -88,6 +95,61 @@ public class DoublyLinkedList<E> {
             this.size++;
         }
         return;
+    }
+    public void delete(){
+        if (this.Head == null) return;
+        if (this.Head == this.Tail){
+            this.Head = null;
+            this.Tail = null;
+        }
+        else {
+            Node prevNode = this.Tail.prev;
+            prevNode.next = null;
+            this.Tail = prevNode;
+        }
+        this.size--;
+    }
+    public void deleteAt(int index){
+        if (this.Head == null || 0 > index || index >= this.size){
+            System.out.println("Error indexing !");
+            return;
+        }
+        if (this.Head == this.Tail){
+            this.Head = null;
+            this.Tail = null;
+        }
+        else if (index == 0){
+            Node nextNode = this.Head.next;
+            nextNode.prev = null;
+            this.Head = nextNode;
+        }
+        else if (index == this.size-1) {
+            Node prevNode = this.Tail.prev;
+            prevNode.next = null;
+            this.Tail = prevNode;
+
+        }
+        else if (index == this.size / 2){
+            Node tempNode = this.Head;
+            for (int i = 0; i<index; i++){
+                tempNode = tempNode.next;
+            }
+            Node nextNode = tempNode.next;
+            Node prevNode = tempNode.prev;
+            prevNode.next = nextNode;
+            nextNode.prev = prevNode;
+        }
+        else{
+            Node tempNode = this.Tail;
+            for (int i = 0; i<size-1-index; i++){
+                tempNode = tempNode.prev;
+            }
+            Node nextNode = tempNode.next;
+            Node prevNode = tempNode.prev;
+            prevNode.next = nextNode;
+            nextNode.prev = prevNode;
+        }
+        this.size--;
     }
     @Override
     public String toString(){
