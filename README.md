@@ -46,3 +46,11 @@
   - add at end
   - insert at index
   - display list
+  - delete
+  - delete at index
+
+**Arrays**
+- Solved Hackerank Problems mentioned below:
+- Explored Triangle Pattern of stars
+- Finding Max size Candles count,
+- Brainstormed optimised it from O(2n) to O(n)
