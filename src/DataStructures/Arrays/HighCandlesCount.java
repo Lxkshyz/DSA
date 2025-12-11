@@ -5,7 +5,7 @@ public class HighCandlesCount {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        List<Integer> candles = new ArrayList<>()
+        List<Integer> candles = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             candles.add(sc.nextInt());
         }
