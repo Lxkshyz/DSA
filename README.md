@@ -54,3 +54,12 @@
 - Explored Triangle Pattern of stars
 - Finding Max size Candles count,
 - Brainstormed optimised it from O(2n) to O(n)
+
+### Day 5
+**Strings**
+- Solve Hackerank Problems
+  - Converting 12 hour string to 24 hour format
+  - Checking password strength
+- Explored how Strings are iterated
+- StringBuffer and it's commonly used methods
+- Explore toCharArray() method for iterative process
