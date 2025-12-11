@@ -10,7 +10,6 @@ public class HourFormat {
         String left = example.substring(2,8);
         int hour = Integer.parseInt(example.substring(0,2));
 
-
         if (period.equals("AM")){
             return (hour == 12 ? "00" : example.substring(0,8)) + left;
         }
