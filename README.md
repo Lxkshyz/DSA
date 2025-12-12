@@ -63,3 +63,12 @@
 - Explored how Strings are iterated
 - StringBuffer and it's commonly used methods
 - Explore toCharArray() method for iterative process
+
+### Day 6
+**Arrays**
+- Solve Hackerank Problems
+  - Result Grading
+  - Apple and Orange
+- Explore some mathematical approaches to problems
+- Learned how to write efficient and shorter line code
+- Learned usage of ternary operators properly
