@@ -72,3 +72,9 @@
 - Explore some mathematical approaches to problems
 - Learned how to write efficient and shorter line code
 - Learned usage of ternary operators properly
+
+### Day 7
+**Arrays**
+- Solve Hackerank Problems
+  - Kangaroo Jumps
+- Understood physics speed-time formula implementation in logic.
